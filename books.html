@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .book img {
+            max-width: 100%;
+            height: auto;
+            max-height: 300px;
+            cursor: pointer; /* يجعل المؤشر يتحول إلى يد عند المرور على الصورة */
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .book {
+            width: 200px;
+            text-align: center;
+        }
+        .book a {
+            display: block;
+            margin-bottom: 10px;
+            text-decoration: none;
+            color: black;
+        }
+        .book a:hover {
+            color: blue; /* تغيير لون الرابط عند التمرير */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="book">
+            <a href="" download>
+                
+            </a>
+            <a href="./pdf/سيكولوجية-الجماهير.pdf" download>
+                <img src="./img/سيكولوجية الجماهير.jpg" alt="كتاب سيكولوجية الجماهير ">
+            </a>
+        </div>
+        <div class="book">
+            <a href="book2.pdf" download>تحميل الكتاب 2</a>
+            <a href="book2.pdf" download>
+                <img src="./img/book2.jpg" alt="كتاب 2">
+            </a>
+        </div>
+        <div class="book">
+            <a href="book3.pdf" download>تحميل الكتاب 3</a>
+            <a href="book3.pdf" download>
+                <img src="./img/book3.jpg" alt="كتاب 3">
+            </a>
+        </div>
+        <div class="book">
+            <a href="book3.pdf" download>تحميل الكتاب 3</a>
+            <a href="book3.pdf" download>
+                <img src="./img/book3.jpg" alt="كتاب 3">
+            </a>
+    </div>
+</body>
+</html>
