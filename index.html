@@ -8,41 +8,51 @@
         body {
             font-family: Arial, sans-serif;
             text-align: center;
-            background-image: url(./img/300634408_611095474134650_4805556492905606496_n.jpg);
-            background-size: 800px;
-            border-radius: 15px;
-            background-color: rgb(0, 0, 0.5);
+            background-color: #f5f5f5;
             margin: 0;
             padding: 0;
         }
         h1 {
             color: #333;
-            margin-top: 20px;
+            margin: 20px 0;
+        }
+        .links-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            padding: 20px;
         }
         .link {
-            margin: 20px;
             padding: 10px 20px;
             text-decoration: none;
             background-color: #4CAF50;
             color: #fff;
             border-radius: 5px;
-            display: inline-block;
+            font-size: 16px;
+            transition: background-color 0.3s;
         }
         .link:hover {
             background-color: #45a049;
+        }
+        @media (max-width: 768px) {
+            .link {
+                width: 90%;
+                text-align: center;
+            }
         }
     </style>
 </head>
 <body>
     <h1>مرحبًا بكم في موقع مدرسة البياضية الثانوية المشتركة</h1>
-    <a href="gallery.html" class="link">مواهب </a>
-    <a href="first_student.html" class="link">اوائل الطلبة </a>
-    <a href="vedio.html" class="link">مبادرة بداية</a>
-    <a href="skills.html" class="link">المشاركات المدرسية </a>
-    <a href="music.html" class="link">شجرة المحبة </a>
-    <a href="books.html" class="link">المكتبة الالكترونية  </a>
-    
-    
+    <div class="links-container">
+        <a href="gallery.html" class="link">مواهب</a>
+        <a href="first_student.html" class="link">أوائل الطلبة</a>
+        <a href="vedio.html" class="link">مبادرة بداية</a>
+        <a href="skills.html" class="link">المشاركات المدرسية</a>
+        <a href="music.html" class="link">شجرة المحبة</a>
+        <a href="books.html" class="link">المكتبة الإلكترونية</a>
+    </div>
 </body>
 </html>
 <!DOCTYPE html>
@@ -56,48 +66,32 @@
             font-family: Arial, sans-serif;
             text-align: center;
             background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
         }
         h1 {
             color: #333;
-            margin-top: 20px;
+            margin: 20px 0;
         }
         .container {
-            display: flex;
-            flex-wrap: wrap;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
             gap: 15px;
-            justify-content: center;
-            margin: 20px;
-        }
-        .item {
-            border: 1px solid #ddd;
-            padding: 10px;
-            background-color: #fff;
-            width: 170px;
+            padding: 20px;
         }
         img {
             max-width: 100%;
             height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
     </style>
 </head>
 <body>
-    <h1>معرض صور المدرسة</h1>
+    <h1>إنجازات فصل 1/1</h1>
     <div class="container">
-        <!-- صور المدرسة -->
-        <div class="container">
-          <img src="./img/mena.jpg" alt="">  
-            <p></p>
-        </div>
-        <div class="item">
-            <img src="./img/IMG-20241125-WA0013.jpg" alt="">
-         
-            <p>صورة 2</p>
-        </div>
-        <div class="item">
-          <img src="./img/IMG-20241125-WA0006.jpg" alt="">
-            <p>صورة 3</p>
-        </div>
-        <!-- إضافة المزيد من الصور -->
+        <img src="./غلاف .jpg" alt="إنجازات">
+        <!-- يمكنك إضافة المزيد من الصور -->
     </div>
 </body>
 </html>
@@ -112,19 +106,20 @@
             font-family: Arial, sans-serif;
             text-align: center;
             background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
         }
         h1 {
             color: #333;
-            margin-top: 20px;
+            margin: 20px 0;
         }
         .container {
             max-width: 600px;
             margin: 20px auto;
-            text-align: left;
-            background-color: rgba(0,0,0,0.1);
+            background-color: rgba(255, 255, 255, 0.9);
             padding: 20px;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
         }
         .book {
             margin: 10px 0;
@@ -139,18 +134,11 @@
     </style>
 </head>
 <body>
-    <h1>مكتبة الكتب المدرسية</h1>
+    <h1>المكتبة الإلكترونية</h1>
     <div class="container">
-        <div class="book">
-            <a href="./pdf/قانون-الإيمان.pdf" download>كتاب قانون الايمان</a>
-        </div>
-        <div class="book">
-            <a href="book2.pdf" download>تحميل الكتاب 2</a>
-        </div>
-        <div class="book">
-            <a href="book3.pdf" download>تحميل الكتاب 3</a>
-        </div>
-        <!-- إضافة المزيد من الكتب -->
+        <div class="book"><a href="#">رابط الكتاب 1</a></div>
+        <div class="book"><a href="#">رابط الكتاب 2</a></div>
+        <!-- يمكنك إضافة المزيد من الكتب -->
     </div>
 </body>
 </html>
